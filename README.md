@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @Divya1S
-- 👀 I’m interested in Machine Learning, Data Science, Internet of Things and Cloud Computing.
+- 👀 I’m interested in Artificial Intelligence, Machine Learning, Data Science, Internet of Things and Cloud Computing.
 - 💞️ I’m looking to collaborate on projects in my interest domain.
 
 <!---
