@@ -3,7 +3,9 @@ I'm a graduate student @University of Southern California majoring in Computer S
 
 🔭 Current Projects:
 AI-based LLM visualization and pipeline optimization
+<br/>
 AI tutoring using NLP
+<br/>
 Image classification with computer vision
 <br/>
 
