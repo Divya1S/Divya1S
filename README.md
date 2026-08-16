@@ -89,7 +89,7 @@
 
 ## Featured Projects
 
-### [CareMesh](https://github.com/Divya1S/CareMesh) — AI-native platform with safety-first agents and CI-gated evals
+### [CareMesh](https://github.com/Divya1S/CareMesh) AI-native platform with safety-first agents and CI-gated evals
 A simulated youth mental-health platform where a student talks to an agentic RAG companion, risk signals flow through a transactional outbox into a clinician review queue, and every AI change is gated by evals. All LLM plumbing is hand-written: prompt registry with versions, structured-output validation with bounded retry, SSE streaming, and per-call cost and latency auditing.
 `Python` `FastAPI` `Next.js 16` `PostgreSQL + pgvector` `Redpanda` `Redis` `MCP` `Docker` `Prometheus`
 - Bounded tool loop over allow-listed, tenant-scoped tools; crisis inputs structurally disable tools, enforced in application code
@@ -97,7 +97,7 @@ A simulated youth mental-health platform where a student talks to an agentic RAG
 - 118 backend tests against real Postgres, Redis, and Redpanda; 23 eval cases gated in CI at 100%, escalation precision and recall 1.0
 - Swapping lexical for bge-small ONNX embeddings raised retrieval hit@1 from 0.5 to 1.0, measured and written up
 
-### [AetherOps](https://github.com/Divya1S/Aether-Ops) — Autonomous incident remediation on a zero-dependency core · [Live console](https://divya1s.github.io/Aether-Ops/)
+### [AetherOps](https://github.com/Divya1S/Aether-Ops) Autonomous incident remediation on a zero-dependency core · [Live console](https://divya1s.github.io/Aether-Ops/)
 A deterministic workflow engine drives nine specialized LLM agents through gather, diagnose, plan, gate, execute, verify, and learn. Agents have autonomy of investigation and proposal, never of execution: every action is typed, policy-checked, human-approved where required, reversible via saga compensation, and recorded in a hash-chained audit ledger.
 `Python (stdlib core)` `React 19` `Ollama` `LangGraph (optional)` `SQLite` `MCP` `GitHub Actions`
 - Versioned prompt registry with sha256 lockfile; JSON-Schema output contracts per agent with one semantic retry, then escalate
@@ -105,7 +105,7 @@ A deterministic workflow engine drives nine specialized LLM agents through gathe
 - LLM-as-judge whose verdict a deterministic citation-faithfulness check can override; adversarial golden scenarios that must escalate to pass
 - 224 automated tests across a Python 3.11–3.13 matrix; OWASP LLM Top 10 controls mapped and tested
 
-### [LedgerFlow](https://github.com/Divya1S/LedgerFlow) — Double-entry payments ledger where the database enforces correctness
+### [LedgerFlow](https://github.com/Divya1S/LedgerFlow) Double-entry payments ledger where the database enforces correctness
 Money is exact, provably: a deferred trigger rejects any commit whose ledger entries do not sum to zero. Firing 1,000 concurrent transfers at one account confirms exactly the affordable half succeed. Events reach Kafka through a transactional outbox, and an LLM fraud analyst investigates flagged payments through read-only tools. It can flag money; it cannot touch it.
 `Java 21` `Spring Boot 3.5` `PostgreSQL 17` `Kafka` `Redis` `React 18` `Helm / Kubernetes` `Terraform` `k6` `OpenTelemetry`
 - Chaos test with Kafka stopped and Redis paused under load: 102,110 requests, 0 failures, ledger sum exactly zero, outbox drained on recovery
@@ -113,7 +113,7 @@ Money is exact, provably: a deferred trigger rejects any commit whose ledger ent
 - Zero-downtime expand/contract column rename; monthly partitioning with pruning; deadlock reproduction and retry
 - Golden-case eval of the fraud agent caught a real prompt-injection weakness before it shipped; CodeQL and Trivy in CI
 
-### [SeatSync](https://github.com/Divya1S/SeatSync) — Event-driven booking microservices proven never to oversell
+### [SeatSync](https://github.com/Divya1S/SeatSync) Event-driven booking microservices proven never to oversell
 Six Spring Boot services behind Spring Cloud Gateway with an Angular 21 SPA. Overselling is prevented by three independent layers: atomic Redis holds, authoritative Postgres hold rows, and JPA optimistic locking as the final guard. Then the whole thing is attacked in CI.
 `Java 21` `Spring Boot` `Spring Cloud Gateway` `Kafka` `PostgreSQL + pgvector` `Redis` `Angular 21` `Spring AI` `Docker`
 - 60 simultaneous requests at 10 seats: exactly 10 bookings, one per seat, zero 5xx; 150 buyers vs 44 seats: exactly 44 bookings, 74 clean 409s
@@ -121,21 +121,21 @@ Six Spring Boot services behind Spring Cloud Gateway with an Angular 21 SPA. Ove
 - Merge gates: Pact contract tests, jqwik property tests, ArchUnit rules, PIT mutation testing at 96% test strength, Toxiproxy chaos suite
 - Spring AI RAG concierge with live tool calls, source citations, a confidence badge, and fail-closed behavior without an API key
 
-### [ReNest](https://github.com/Divya1S/ReNest) — Campus marketplace with a fault-tolerant Gemini concierge
+### [ReNest](https://github.com/Divya1S/ReNest) Campus marketplace with a fault-tolerant Gemini concierge
 Photograph a room, let Gemini vision detect items, generate listing drafts in bulk, triage them, and hand off with PIN verification. The concierge runs a Plan-Execute-Reflect agent loop behind a semantic router and semantic response cache, with circuit breakers and quota-aware fallbacks so it degrades gracefully instead of failing.
 `Python` `Django 6 + DRF` `Celery` `PostgreSQL` `Redis` `Google Gemini` `React 19` `Vite` `Tailwind 4` `Capacitor` `Playwright`
 - Read-only tool belt with a state-integrity test asserting zero writes outside concierge tables
 - Two embedding spaces never cross-compared; golden-set offline evals for the router and retrieval run in CI
 - 330+ automated tests (backend, Vitest, Playwright E2E), full static typing with mypy and django-stubs, PWA with Web Push and native shell
 
-### [CarePilot](https://github.com/Divya1S/CarePilot) — Multi-agent care coordination with strict human approval
+### [CarePilot](https://github.com/Divya1S/CarePilot) Multi-agent care coordination with strict human approval
 Six specialized agents under one orchestrator reconcile medications against after-visit documents with source citations, draft communications, and manage calendars. No tool can send or prescribe: every draft passes a human approval gate. PII is redacted before any LLM call and rehydrated after, with tests that capture the actual prompts.
 `Python` `FastAPI` `Pydantic v2` `SQLite` `Google Calendar API` `Docker`
 - ReAct-style planner over a typed tool registry with a step cap and exact-repeat guard
 - Tiered escalation, forbidden clinical-language scan, RBAC with revocable consent, append-only audit log
 - 115 tests runnable fully offline; 13-case reconciler eval corpus plus LLM-as-judge for drafts
 
-### [Stone Garden](https://github.com/Divya1S/go-game-ai-alphabeta) — A complete Go engine and AI in one HTML file · [Play it](https://go-game-ai.netlify.app/)
+### [Stone Garden](https://github.com/Divya1S/go-game-ai-alphabeta) A complete Go engine and AI in one HTML file · [Play it](https://go-game-ai.netlify.app/)
 Minimax with alpha-beta pruning, a Zobrist-hashed transposition table, super-ko detection, move ordering, and a multi-factor evaluation, plus Japanese scoring, undo/redo, review mode, and SGF import/export. Hand-written vanilla JavaScript on Canvas 2D, built to find out where the complexity in Go's rules was hiding.
 
 **Also:** [TensorTonic Solutions](https://github.com/Divya1S/TensorTonic-Solutions), 58 machine-learning algorithms implemented from scratch in NumPy (optimizers, losses, BM25, positional encoding, GRU cells, batch norm). [VisionMate](https://github.com/Divya1S/HackSC), the HackSC 2024 accessibility-track winner fusing YOLO detection with DPT monocular depth for indoor navigation, later grown into the ShowCAIS 2025 award-winning research.
