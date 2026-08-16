@@ -28,12 +28,12 @@
 
 | | |
 |---|---|
-| 🧠 **AI Agents & Agentic Systems** | Multi-agent orchestration, tool-calling loops with allow-listed tools, human-in-the-loop approval gates, MCP servers |
-| 🔍 **RAG & Knowledge Systems** | pgvector and hybrid retrieval, cited answers with retrieval trails, embedding comparisons measured on hit@1 and MRR |
-| ⚖️ **LLM Evaluation & Reliability** | Golden-set eval suites gated in CI, LLM-as-judge with deterministic anchors, prompt-injection regression tests, versioned prompt registries |
-| ⚙️ **Distributed Backend Systems** | Event-driven services with transactional outbox and idempotent consumers, concurrency correctness proven under load, chaos and mutation testing |
-| 👁️ **Computer Vision** | Real-time detection and segmentation on assistive hardware, monocular depth fusion, medical image classification |
-| 💻 **Full-Stack Engineering** | FastAPI, Spring Boot, and Django backends behind React, Next.js, and Angular front ends |
+|  **AI Agents & Agentic Systems** | Multi-agent orchestration, tool-calling loops with allow-listed tools, human-in-the-loop approval gates, MCP servers |
+|  **RAG & Knowledge Systems** | pgvector and hybrid retrieval, cited answers with retrieval trails, embedding comparisons measured on hit@1 and MRR |
+|  **LLM Evaluation & Reliability** | Golden-set eval suites gated in CI, LLM-as-judge with deterministic anchors, prompt-injection regression tests, versioned prompt registries |
+|  **Distributed Backend Systems** | Event-driven services with transactional outbox and idempotent consumers, concurrency correctness proven under load, chaos and mutation testing |
+|  **Computer Vision** | Real-time detection and segmentation on assistive hardware, monocular depth fusion, medical image classification |
+|  **Full-Stack Engineering** | FastAPI, Spring Boot, and Django backends behind React, Next.js, and Angular front ends |
 
 ---
 
