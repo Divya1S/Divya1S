@@ -17,8 +17,6 @@
 ## About Me
 
 - MS in Computer Science, University of Southern California (May 2026). B.E. Information Technology with Honours in Data Science, SPPU.
-- Research Assistant on USC iLab's smart-glasses project: real-time object detection and instance segmentation for blind and low-vision users, running at 25 ms inference and 30 FPS inside a SLAM-based navigation system.
-- One year as a Software Engineer at Accenture building Angular features and FastAPI services over MySQL on Amazon RDS. Front-end work at USC's Sol Price School: React, TypeScript, and Next.js interfaces to WCAG 2.1 AA for 20K students and faculty.
 - I build LLM systems where the model proposes and deterministic code decides: bounded tool loops, human-in-the-loop gates, prompt registries, and CI-gated evaluation harnesses.
 - First author on two Springer publications: [dental caries detection with deep and transfer learning](https://link.springer.com/chapter/10.1007/978-981-99-3734-9_3) and [plant quality assessment with AI](https://link.springer.com/chapter/10.1007/978-981-19-6088-8_62). Winner of ACM Trojan Hacks 2026 and the HackSC 2024 Accessibility Track; Best Master's Poster at ShowCAIS 2025.
 
