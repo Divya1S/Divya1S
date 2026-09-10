@@ -138,7 +138,7 @@ Six specialized agents under one orchestrator reconcile medications against afte
 ### [Stone Garden](https://github.com/Divya1S/go-game-ai-alphabeta) A complete Go engine and AI in one HTML file · [Play it](https://go-game-ai.netlify.app/)
 Minimax with alpha-beta pruning, a Zobrist-hashed transposition table, super-ko detection, move ordering, and a multi-factor evaluation, plus Japanese scoring, undo/redo, review mode, and SGF import/export. Hand-written vanilla JavaScript on Canvas 2D, built to find out where the complexity in Go's rules was hiding.
 
-**Also:** [TensorTonic Solutions](https://github.com/Divya1S/TensorTonic-Solutions), 58 machine-learning algorithms implemented from scratch in NumPy (optimizers, losses, BM25, positional encoding, GRU cells, batch norm). [VisionMate](https://github.com/Divya1S/HackSC), the HackSC 2024 accessibility-track winner fusing YOLO detection with DPT monocular depth for indoor navigation, later grown into the ShowCAIS 2025 award-winning research.
+**Also:** [VisionMate](https://github.com/Divya1S/HackSC), the HackSC 2024 accessibility-track winner fusing YOLO detection with DPT monocular depth for indoor navigation, later grown into the ShowCAIS 2025 award-winning research.
 
 ---
 
@@ -157,25 +157,9 @@ Minimax with alpha-beta pruning, a Zobrist-hashed transposition table, super-ko 
 
 ---
 
-## GitHub Activity
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=Divya1S&hide_border=true" alt="GitHub streak" height="160">
-</p>
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Divya1S&hide_border=true&area=true" alt="Contribution graph" width="100%">
-</p>
-
----
-
 ## Writing
 
-I write about system design and distributed systems on [Medium](https://medium.com/@drajput_14416):
-[Event-Driven Architecture, CQRS, Event Sourcing & Sagas](https://medium.com/@drajput_14416/event-driven-architecture-cqrs-event-sourcing-sagas-f2743ce8ddb7) ·
-[Hexagonal, Onion & Clean Architecture](https://medium.com/@drajput_14416/hexagonal-onion-clean-architecture-ef4dad926a85) ·
-[Little's Law and Why Servers Fall Over](https://medium.com/@drajput_14416/the-secret-formula-thats-quietly-crashing-your-servers-little-s-law-9c0f010966f5) ·
-[Scaling Up vs Scaling Out](https://medium.com/@drajput_14416/scaling-up-vs-scaling-out-392c03df6119)
-
+I write technical blogs on [Medium](https://medium.com/@drajput_14416):
 ---
 
 ## Let's Connect
