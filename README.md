@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <a href="https://divya-rajput-portfolio.netlify.app/">Portfolio</a> ·
+  <!-- <a href="https://divya-rajput-portfolio.netlify.app/">Portfolio</a> · -->
   <a href="https://www.linkedin.com/in/divya-rajput-5232131b0/">LinkedIn</a> ·
   <a href="https://medium.com/@drajput_14416">Medium</a> ·
   <a href="mailto:divya16sr@gmail.com">divya16sr@gmail.com</a>
